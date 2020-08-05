@@ -9,19 +9,6 @@ module ApplicationHelper
     end
   end
 
-  def login(user)
 
-    user = User.find_by(email: params[:session][:email])
 
-    if @user && @user.authenticate(params[:session][:password])
-
-      return true
-
-    else
-
-      return false
-
-    end
-
-  end
 end
